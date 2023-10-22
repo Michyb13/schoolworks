@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Club Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="jquery-3.7.1.slim.js" type="text/javascript">
+      window.ready(callback());
+      function callback(){
+        $('#changecolor').click(function(){
+          $('#tut').css('background', 'red')
+
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Coding Club Sign Up Form</h2>
+    <form method="POST">
+      <div class="input-class">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="input-field" />
+      </div>
+
+      <div class="input-class">
+        <label for="matricNumber">Matric Number:</label>
+        <input
+          type="text"
+          id="matricNumber"
+          name="matricNumber"
+          class="input-field"
+          required
+        />
+      </div>
+      <div class="input-class">
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="input-field"
+          required
+        />
+      </div>
+
+      <div class="input-class">
+        <label for="level">Level:</label>
+        <input
+          type="text"
+          id="level"
+          name="level"
+          class="input-field"
+          required
+        />
+      </div>
+
+      <div class="input-class">
+        <label for="course">Course:</label>
+        <input
+          type="text"
+          id="course"
+          name="course"
+          class="input-field"
+          required
+        /><br /><br />
+      </div>
+      <div class="input-class">
+        <label for="hallOfResidence">Hall of Residence:</label>
+        <select id="hallOfResidence" name="hallOfResidence">
+          <option disabled selected>Select a Hall of Residence</option>
+          <option value="Peter Hall">Peter Hall</option>
+          <option value="Esther Hall">Esther Hall</option>
+          <option value="Mary Hall">Mary Hall</option>
+          <option value="John Hall">John Hall</option>
+          <option value="Deborah Hall">Deborah Hall</option>
+          <option value="Paul Hall">Paul Hall</option>
+          <option value="Lydia Hall">Lydia Hall</option>
+          <option value="Joseph Hall">Joseph Hall</option>
+          <option value="Dorcas Hall">Dorcas Hall</option>
+          <option value="Daniel Hall">Daniel Hall</option>
+        </select>
+      </div>
+
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+
+      <label for="programmingLanguages">Programming Languages Known:</label
+      ><br />
+      <input
+        type="checkbox"
+        id="java"
+        name="programmingLanguages"
+        value="java"
+      />
+      <label for="java">Java</label><br />
+      <input
+        type="checkbox"
+        id="python"
+        name="programmingLanguages"
+        value="python"
+      />
+      <label for="python">Python</label><br />
+      <input
+        type="checkbox"
+        id="javascript"
+        name="programmingLanguages"
+        value="javascript"
+      />
+      <label for="javascript">JavaScript</label><br />
+      <input
+        type="checkbox"
+        id="csharp"
+        name="programmingLanguages"
+        value="csharp"
+      />
+      <label for="csharp">C#</label><br />
+      <input
+        type="checkbox"
+        id="cplusplus"
+        name="programmingLanguages"
+        value="cplusplus"
+      />
+      <label for="cplusplus">C++</label><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="tut">
+      <button id="changecolor">google</button>
+    </div>
+  </body>
+</html>
